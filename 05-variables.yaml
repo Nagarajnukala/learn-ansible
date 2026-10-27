@@ -1,0 +1,10 @@
+- name: demo on variables
+  hosts: local
+  connections: local
+  vars:
+    course: "Ansible"
+  tasks:
+    - name: print the hello world
+      debug:
+        msg: "Hello from {{ course }} from {{ trainer }}, duration is {{ duration }}"
+        
