@@ -1,0 +1,7 @@
+- name: demo on debug
+  hosts: localhost
+  connections: local 
+  tasks: 
+    - name: print the hello world
+      ansiblle.builtin.debug:
+        
